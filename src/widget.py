@@ -10,7 +10,7 @@ def masks_of_cards(data: str) -> str:
     if right_data[0] == "Счет":
         return f"Счет {mask_account_number(right_data[-1])}"
     else:
-        return f'{" ".join (right_data[:-1])} {mask_credit_card_number(right_data[-1])}'
+        return f'{" ".join(right_data[:-1])} {mask_credit_card_number(right_data[-1])}'
 
 
 def convert_datetime_to_date(datetime_string: str) -> str:
